@@ -2,7 +2,6 @@ package com.humannative.api.auth.service;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 
 import com.humannative.security.service.JWTService;
 
