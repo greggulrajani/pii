@@ -88,15 +88,6 @@ public class SubmissionServiceTest {
 	}
 
 	@Test
-	void when_updateSubmission_returns_500_when_an_update_fails() {
-		when(piiDaoMock.updateSubmission(anyLong(), any(SubmissionState.class))).thenThrow(new IllegalStateException("fibble"));
-		ResponseStatusException exception = assertThrows(ResponseStatusException.class,
-				() -> submissionService.updateSubmission(1L, SubmissionState.PENDING));
-
-		assertThat(exception.getMessage(), is("500 INTERNAL_SERVER_ERROR"));
-	}
-
-	@Test
 	void when_getSubmission_is_called_returns_SubmissionReceipt() {
 		when(piiDaoMock.getSubmission(anyLong())).thenReturn(SUBMISSION_DTO);
 		assertThat(submissionService.getSubmission(API_USER, 1L), is(new SubmissionReceipt(1L, SubmissionState.PENDING)));

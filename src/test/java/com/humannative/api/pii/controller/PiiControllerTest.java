@@ -293,6 +293,7 @@ public class PiiControllerTest {
 	}
 
 	@Test
+	@SuppressWarnings("deprecation")
 	void verify_BadRequest_is_returned_for_HttpMessageNotReadableException_exception_and_api_user_with_correct_token()
 			throws Exception {
 		setUpApiUser();

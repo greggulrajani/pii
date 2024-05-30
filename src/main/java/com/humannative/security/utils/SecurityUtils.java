@@ -18,7 +18,7 @@ public class SecurityUtils {
 
 	public static EnumSet<Role> GrantedAuthoritiesToRoles(Collection<? extends GrantedAuthority> grantedAuthorities) {
 
-		EnumSet roleSet = EnumSet.noneOf(Role.class);
+		EnumSet<Role> roleSet = EnumSet.noneOf(Role.class);
 		for (GrantedAuthority ga : grantedAuthorities) {
 			roleSet.add(Role.valueOf(ga.getAuthority()));
 		}
