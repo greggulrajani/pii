@@ -1,0 +1,8 @@
+package com.humannative.api.pii.model;
+
+public enum Reason {
+
+	FULL_NAME, HOME_ADDRESS, PHONE_NUMBER, GOVERMENT_ID, PASSPORT_NUMBER, BIOMETRIC_DATA, PERSON_IMAGE, VOICE_AUDIO,
+	OTHER
+
+}

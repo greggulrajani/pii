@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE suppressions PUBLIC
+        "-//Puppy Crawl//DTD Suppressions 1.0//EN"
+        "http://www.puppycrawl.com/dtds/suppressions_1_0.dtd">
+
+<suppressions>
+    <suppress checks="Javadoc" files="."/>
+    <suppress checks="SpringHeader" files="."/>
+    <suppress checks="SpringLambda" files="."/>
+    <suppress checks="RequireThis" files="."/>
+    <suppress checks="SpringImportOrder" files="."/>
+    <suppress checks="SpringLeadingWhitespace" files="."/>
+    <suppress checks="SpringTestFileName" files="."/>
+    <suppress checks="SpringHideUtilityClassConstructor" files="."/>
+    <suppress checks="SpringAvoidStaticImport" files="."/>
+    <suppress checks="RegexpSinglelineJava" files="."/>
+</suppressions>
